@@ -1,0 +1,45 @@
+/* style.css */
+
+/* Body Styles */
+body {
+  background-image: url("images/bg.jpg");  /* Latar belakang menggunakan gambar dengan URL "images/bg.jpg" */
+  background-repeat: no-repeat;  /* Tidak mengulang gambar latar belakang */
+  background-size: cover;  /* Menutupi seluruh area latar belakang */
+  font-family: Arial, sans-serif;  /* Menggunakan jenis font Arial atau sans-serif */
+  color: #333;  /* Warna teks menjadi abu-abu tua (#333) */
+  margin: 0;  /* Mengatur margin halaman menjadi 0 */
+  padding: 0;  /* Mengatur padding halaman menjadi 0 */
+}
+
+/* Logo Positions */
+.logo-left {
+  position: absolute;  /* Menetapkan posisi absolut untuk elemen dengan kelas .logo-left */
+  left: 5px;  /* Muncul di sisi kiri dengan margin 5px dari sisi kiri */
+}
+
+.logo-right {
+  position: absolute;  /* Menetapkan posisi absolut untuk elemen dengan kelas .logo-right */
+  right: 5px;  /* Muncul di sisi kanan dengan margin 5px dari sisi kanan */
+}
+
+/* Image Hover Effect */
+.title-image {
+  transition: transform 0.3s ease;  /* Efek hover pada gambar dengan transformasi selama 0.3 detik */
+  width: 100%;  /* Lebar gambar 100% dari lebar elemen */
+  height: 150px;  /* Tinggi gambar 150px (ubah sesuai kebutuhan) */
+  object-fit: cover;  /* Objek-fit "cover" untuk memastikan gambar mengisi area dengan baik */
+}
+
+.title-image:hover {
+  transform: scale(1.1);  /* Efek membesar 1.1 kali saat gambar dihover */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }  /* Pada awalnya opasitas 0 dan terletak 20px di atas posisi normal */
+  100% { opacity: 1; transform: translateY(0); }  /* Pada akhirnya, opasitas 1 dan kembali ke posisi normal */
+}
+
+h2 {
+  animation: fadeIn 1s ease-in-out;  /* Animasi fadeIn selama 1 detik dengan efek keluar-masuk (ease-in-out) */
+}
